@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <script type="module" src="../scripts/script.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>FlashJS</title>
+</head>
+
+<body>
+    <main class="flex">
+        <!-- modal -->
+        <section id="modal" class="close">
+            <div id="divModal" class="flex">
+                <p id="modalTitle" class="flex">
+                    <span id="spanTitle" class="material-symbols-outlined">
+                        language
+                    </span> Localhost
+                </p>
+                <p id="msg"></p>
+                <div id="divBtnModal" class="flex">
+                    <button id="btnModal" class="flex">OK</button>
+                </div>
+            </div>
+        </section>
+        <!-- modal -->
+
+        <section id="secForm">
+            <fieldset id="formField" class="flex">
+                <form id="formLogin">
+                    <div id="divUso" class="flex">
+                        <label for="user">Usuário</label>
+                        <input type="text" id="user" class="inp-form" name="user" required placeholder="usuário"
+                            title="Campo usuário" value="">
+                    </div>
+                    <div id="divLog" class="flex">
+                        <label for="login">Senha</label>
+                        <input type="password" id="login" class="inp-form" name="login" required placeholder="senha"
+                            title="Campo senha" value="">
+                    </div>
+                    <button type="button" id="btn">ENTRAR</button>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+</body>
+
+</html>

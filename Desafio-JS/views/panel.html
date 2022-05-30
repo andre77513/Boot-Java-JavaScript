@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/panel.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <script type="module" src="../scripts/panel.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Panel - FlashJS</title>
+</head>
+
+<body>
+    <main id="listMain" class="flex">
+        <!-- modal -->
+        <section id="modal" class="close">
+            <div id="divModal" class="flex">
+                <p id="modalTitle" class="flex">
+                    <span id="spanTitle" class="material-symbols-outlined">
+                        language
+                    </span> Localhost
+                </p>
+                <p id="msg"></p>
+                <div id="divBtnModal" class="flex">
+                    <button id="btnModal" class="flex">OK</button>
+                </div>
+            </div>
+        </section>
+        <!-- modal -->
+
+        <!-- menu -->
+        <section id="secMenu" class="flex">
+            <a href="#" id="btnClient" class="menu flex">
+                <span class="material-symbols-outlined"> group_add </span>Clientes
+            </a>
+            <a href="#" id="btnProduct" class="menu flex"><span class="material-symbols-outlined"> redeem
+                </span>Produtos</a>
+            <a href="#" id="btnOrder" class="menu flex">
+                <span class="material-symbols-outlined"> shopping_cart </span>Pedidos
+            </a>
+        </section>
+        <!-- menu -->
+
+        <!-- window of clients -->
+        <section id="windowClient" class="close">
+            <div id="" class="flex div-header">
+                <h2 class="window-name">Clientes</h2>
+                <button id="" class="btn-close"><span id="closeCli" class="material-symbols-outlined">
+                        close
+                    </span></button>
+            </div>
+            <div id="" class="flex div-inputs">
+                <label for="codeCli" class="input-name">Código</label>
+                <input type="text" name="codeCli" id="codeCli" class="inputs code" disabled value="">
+                <label for="nameCli" class="input-name">Nome</label>
+                <input type="text" name="nameCli" id="nameCli" class="inputs name" value="">
+                <label for="dateCad" class="input-name">Data Cadastro</label>
+                <input type="text" name="dateCad" id="dateCad" class="inputs" value="">
+            </div>
+            <div id="" class="flex div-buttons">
+                <div id="" class="flex nav-buttons">
+                    <button id="previousCli" class="navigation previous">&lt;</button>
+                    <button id="nextCli" class="navigation next">&gt;</button>
+                </div>
+                <div id="" class="flex reg-buttons">
+                    <button id="newCli" class="register btn-new">Novo</button>
+                    <button id="saveCli" data-savecli="blocked" class="register btn-to-save">Salvar</button>
+                </div>
+            </div>
+        </section>
+        <!-- window of clients -->
+
+        <!-- window of products -->
+        <section id="windowProducts" class="close">
+            <div id="" class="flex div-header">
+                <h2 class="window-name">Produtos</h2>
+                <button id="" class="btn-close"><span id="closeProd" class="material-symbols-outlined">
+                        close
+                    </span></button>
+            </div>
+            <div id="" class="flex div-inputs">
+                <label for="codeProd" class="input-name">Código</label>
+                <input type="text" name="codeProd" id="codeProd" class="inputs code" disabled value="">
+                <label for="description" class="input-name">Descrição</label>
+                <input type="text" name="description" id="description" class="inputs name" value="" title="descrição">
+                <label for="price" class="input-name">Preço</label>
+                <input type="number" name="price" id="price" class="inputs" value="" title="preço">
+                <label for="quantity" class="input-name">Quantidade</label>
+                <input type="number" name="quantity" id="quantity" class="inputs" value="" title="quantidade">
+            </div>
+            <div id="" class="flex div-buttons">
+                <div id="" class="flex nav-buttons">
+                    <button id="previousProd" class="navigation previous">&lt;</button>
+                    <button id="nextProd" class="navigation next">&gt;</button>
+                </div>
+                <div id="" class="flex reg-buttons">
+                    <button id="newProd" class="register btn-new">Novo</button>
+                    <button id="saveProd" data-saveprod="blocked" class="register btn-to-save">Salvar</button>
+                </div>
+            </div>
+        </section>
+        <!-- window of products -->
+
+        <!-- window of orders -->
+        <section id="windowOrderControl" class="close">
+            <section id="orderControl" class="flex">
+                <div id="" class="">
+                    <div id="" class="flex div-header-order">
+                        <h2 class="window-name">Pedidos</h2>
+                        <button id="" class="btn-close"><span id="closeOrder" class="material-symbols-outlined">
+                                close
+                            </span></button>
+                    </div>
+                </div>
+                <div id="InputCli" class="flex">
+                    <label for="inputCliCode" class="input-name">Código do Cliente</label>
+                    <input type="number" id="inputCliCode" class="inputs" placeholder="Digite o código do cliente"
+                        value="" title="código do cliente">
+                    <label for="inputCliName" class="input-name">Cliente</label>
+                    <input type="text" id="inputCliName" class="inputs" disabled value="" title="cliente">
+                </div>
+                <div id="findProducts" class="flex">
+                    <h3 class="flex title-find">
+                        Localizar produto
+                    </h3>
+                    <div id="blockOfInputs" class="flex">
+                        <div id="backInputs" class="flex">
+                            <input type="number" id="findCodePro" class="inputs" value="" title="código do produto">
+                            <input type="text" id="descriptionProd" class="inputs" disabled value="">
+                            <input type="text" id="priceProd" class="inputs" disabled value="" title="preço">
+                            <input type="number" id="theAmount" class="inputs" value="" title="quantidade">
+                            <input type="button" id="btnLaunch" class="inputs" value="Lançar no Pedido">
+                        </div>
+                    </div>
+                </div>
+                <div id="divItems" class="flex">
+                    <h3 class="flex title-find">
+                        Itens do Pedido
+                    </h3>
+                    <div id="divItemsDescription" class="flex">
+                        <ul id="itemDescCode" class="flex div-direction">
+                            <li class="li-title">Item</li>
+
+                        </ul>
+                        <ul id="itemDesc" class="flex div-direction">
+                            <li class="li-title">Descrição</li>
+
+                        </ul>
+                        <ul id="itemPrice" class="flex div-direction">
+                            <li class="li-title">Preço</li>
+
+                        </ul>
+                        <ul id="itemQtd" class="flex div-direction">
+                            <li class="li-title">Qtd</li>
+
+                        </ul>
+                        <ul id="itemSubTotal" class="flex div-direction">
+                            <li class="li-title">Sub Total</li>
+                        </ul>
+                    </div>
+                    <div id="valueTotal" class="flex">
+                        <ul>
+                            <li id="inpTotal" class="close"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        <!-- window of orders -->
+
+    </main>
+
+</body>
+
+</html>

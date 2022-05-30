@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 0;*/
+    text-decoration: none;
+}
+
+:root {
+    /* 1 rem = 16px (User Agent) = 100% (User Agent) */
+    /* 62.5% = 10px */
+    font-size: 62.5%;
+
+    --green: rgb(46, 125, 50);
+    --blue: rgb(25, 118, 210);
+    --purple: rgb(103, 58, 183);
+    --font: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.open-window {
+    display: block;
+    display: flex;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+/* menu  */
+section#secMenu {
+    width: 20%;
+    border-right: .1rem solid rgba(0, 0, 0, .3);
+    flex-direction: column;
+    font-family: var(--font);
+}
+
+section#secMenu>a.menu {
+    align-items: center;
+    color: rgba(0, 0, 0, .9);
+    font-size: 1.8rem;
+    margin-top: .7rem;
+}
+
+section#secMenu>a.menu>span {
+    margin: 0 .5rem 0 .7rem;
+}
+
+/* menu  */
+
+.div-header {
+    width: 36rem;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-close {
+    width: 2.2rem;
+    height: 2.2rem;
+    background: local;
+    color: red;
+}
+
+.window-name {
+    width: 90%;
+    font-size: 2.4rem;
+    text-decoration: underline;
+}
+
+.div-inputs {
+    width: 36rem;
+    height: auto;
+    margin-top: 2rem;
+    flex-direction: column;
+    /* border: .1rem solid red; */
+}
+
+.input-name {
+    margin-top: .5rem;
+    font-size: 1.8rem;
+}
+
+.inputs {
+    height: 3rem;
+    padding-left: .5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.div-buttons {
+    width: 36rem;
+    height: 5rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.nav-buttons {
+    width: 18rem;
+    height: auto;
+    gap: .5rem;
+}
+
+.navigation {
+    width: 6rem;
+    height: 2rem;
+    color: #fff;
+    background-color: var(--purple);
+    font-size: 2.2rem;
+    padding: 1.2rem;
+    border-radius: .4rem;
+}
+
+.reg-buttons {
+    width: 18rem;
+    height: auto;
+    justify-content: flex-end;
+    gap: .5rem;
+}
+
+.register {
+    width: 9rem;
+    height: 2rem;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1.2rem;
+    border-radius: .4rem;
+}
+
+.btn-new {
+    background-color: var(--blue);
+}
+
+.btn-to-save {
+    background-color: var(--green);
+}
+
+/* window of clients */
+#windowClient {
+    border: .1rem solid rgba(0, 0, 0, .3);
+    margin: 5rem auto;
+    width: 40rem;
+    height: 30rem;
+    flex-direction: column;
+    font-family: var(--font);
+    align-items: center;
+}
+
+/* window of clients */
+
+/* window of products */
+#windowProducts {
+    border: .1rem solid rgba(0, 0, 0, .3);
+    margin: 5rem auto;
+    width: 40rem;
+    height: 35rem;
+    flex-direction: column;
+    font-family: var(--font);
+    align-items: center;
+}
+
+/* window of products */
+
+/* window of orders */
+.open-window-order {
+    display: block;
+}
+
+#windowOrderControl {
+    margin: 5rem auto;
+    width: 80rem;
+    height: auto;
+}
+
+#orderControl {
+    border: .1rem solid rgba(0, 0, 0, .3);
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    font-family: var(--font);
+    align-items: center;
+}
+
+.div-header-order {
+    width: 76rem;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#InputCli {
+    width: 76rem;
+    height: auto;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+#findProducts {
+    width: 76rem;
+    height: auto;
+    flex-direction: column;
+    margin-top: 1rem;
+    border-top: .2rem solid #000;
+    border-bottom: .2rem solid #000;
+}
+
+#blockOfInputs {
+    width: 100%;
+    height: auto;
+}
+
+#backInputs {
+    width: 100%;
+    gap: .5rem;
+    background-color: rgb(207, 216, 220);
+    margin: 1rem 0 1rem 0;
+    padding: .4rem;
+}
+
+.title-find {
+    color: rgb(40, 53, 171);
+    font-size: 1.5rem;
+}
+
+#findCodePro, #itemDescCode {
+    width: 5rem;
+}
+
+#descriptionProd, #itemDesc {
+    width: 25rem;
+}
+
+#priceProd, #theAmount, #itemPrice, #itemQtd {
+    width: 7rem;
+}
+
+#btnLaunch {
+    width: 30rem;
+    cursor: pointer;
+    background-color: rgb(233, 233, 237);
+    border: .01rem solid rgba(0, 0, 0, .3);
+}
+
+#divItems {
+    width: 76rem;
+    height: auto;
+    flex-direction: column;
+}
+
+.div-direction {
+    flex-direction: column;
+}
+
+.li-title {
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#divItemsDescription {
+    width: 90%;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.itemMsg {
+    font-size: 1.3rem;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+#valueTotal {
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.input-total {
+    width: auto;
+    height: auto;
+    background-color: rgba(176, 190, 197, .8);
+    color: rgb(208, 54, 49);
+    padding: .1rem;
+    font-weight: 800;
+    font-size: 1.4rem;
+    font-weight: 600;
+    /* border: none; */
+    list-style-type: none;
+    text-align: center;
+}
+
+/* window of orders */

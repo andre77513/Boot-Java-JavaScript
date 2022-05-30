@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 0;
+    text-decoration: none; */
+}
+
+:root {
+    /* 1 rem = 16px (User Agent) = 100% (User Agent) */
+    /* 62.5% = 10px */
+    font-size: 62.5%;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#formField {
+    width: 35rem;
+    height: auto;
+    margin: 20rem auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#formLogin {
+    width: 98%;
+    height: auto;
+}
+
+#formLogin {
+    margin: .8rem;
+}
+
+#divUso, #divLog {
+    width: 100%;
+    flex-direction: column;
+}
+
+#user, #login {
+    height: 3rem;
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+    padding: .3rem;
+}
+
+.inp-form:focus {
+    background-color: rgb(255, 251, 199);
+}
+
+#btn {
+    background-color: rgb(66, 165, 245);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 5rem;
+    cursor: pointer;
+    font-size: 2.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: .2rem;
+}
+
+#btn:hover {
+    background-color: rgb(50, 140, 255);
+}

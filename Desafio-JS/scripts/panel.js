@@ -1,0 +1,10 @@
+import { pageMenu, clientMenu, productMenu, orderMenu, launch, getClient, getProduct } from "./main.js";
+import { closeModal } from "./index.js";
+closeModal();
+pageMenu();
+clientMenu();
+productMenu();
+orderMenu();
+launch();
+getClient();
+getProduct();
