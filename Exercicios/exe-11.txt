@@ -1,0 +1,11 @@
+1. O que o manipulador ou função replace() efetua em uma string?
+R: Esta função recebe 2 parâmetros. O primeiro é o elemento que vai ser substituído, e o segundo é o elemento que vai substituir.
+
+2. O que o manipulador ou função sort() efetua em um array?
+R: Esta função ordena um array.
+
+3. É correto dizer que o JS é uma linguagem orientada a objetos?
+R: Não. Ele tem uma implementação a orientação a objetos. Ele cria objetos mas não é uma linguagem de programação orientada a objetos.
+
+4. Como podemos definir o operador new?
+R: É uma palavra reservada que instância um novo objeto.
